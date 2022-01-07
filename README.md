@@ -21,6 +21,13 @@ Code](https://www.youtube.com/watch?v=_NnElPO5BU0) before the kata coding
 session.
 
 ## Getting started
+Here are the Eclipse tools we will use, you probably already have many of them:
+* [Buildship: Eclipse Plug-ins for Gradle](https://github.com/eclipse/buildship/blob/master/docs/user/Installation.md)
+* [TestNG Eclipse plug-in](https://testng.org/doc/download.html)
+* [EclEmma: Java code coverage for Eclipse](https://www.eclemma.org/)
+* Optional: [Infinitest: automatically runs relevant tests on change](https://infinitest.github.io/doc/eclipse#get-started)
+* Optional: [MoreUnit: shortcuts to run tests for class and jump between test and class](https://moreunit.github.io/MoreUnit-Eclipse/)
+
 Create a branch of this repository called firstname1-firstname2 where firstname1
 is your first name and firstname2 is your coding partner's first name. Import
 the project as a Gradle project in Eclipse or any other IDE that you like. If you are using Eclipse, you can import the project via:
@@ -28,9 +35,6 @@ the project as a Gradle project in Eclipse or any other IDE that you like. If yo
 2. Select Existing Gradle Project
 3. Select the directory in which this README exists
 4. Press Finish
-
-Tools we will use are:
-Buildship: Eclipse Plug-ins for Gradle
 
 ## Gilded Rose requirements
 Hi and welcome to team Gilded Rose. As you know, we are a small inn with a prime
