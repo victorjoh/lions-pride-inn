@@ -1,4 +1,4 @@
-# Guilded Rose Refactoring Kata
+# Gilded Rose Refactoring Kata
 Welcome to the dojo! This is a kata (exercise) about working with legacy code.
 In this kata we have been given a piece of code that is hard to test since it
 was not written with testing in mind. The code is risky to refactor because it
