@@ -1,4 +1,4 @@
-package guilded.rose;
+package gilded.rose;
 
 public class Item {
 

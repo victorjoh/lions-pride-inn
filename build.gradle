@@ -15,7 +15,7 @@ dependencies {
 }
 
 application {
-    mainClass = 'guilded.rose.App'
+    mainClass = 'gilded.rose.App'
 }
 
 tasks.named('test') {
