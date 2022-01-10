@@ -1,16 +1,15 @@
 # Guilded Rose Refactoring Kata
-Welcome to the dojo! This is a kata (exercise) about working with untested
-spagetti code. We have been given a piece of code that is hard to test since it
+Welcome to the dojo! This is a kata (exercise) about working with legacy code.
+In this kata we have been given a piece of code that is hard to test since it
 was not written with testing in mind. The code is risky to refactor because it
 does not have any tests so we might introduce bugs if we try to refactor. It is
-also risky to add new functionality for the same reason. The owner's of Gilded
-Rose wants us to add a feature to this piece of code. How should we approach
+also risky to add new functionality for the same reason. How should we approach
 this problem? The goal is to transfer the crappy piece of code that we have been
 given to code that is well tested, easy to read and understand.
 
 We will study the [Testing and Refactoring Legacy
 Code](https://www.youtube.com/watch?v=_NnElPO5BU0) approach presented by Sandro
-Mancuso and apply it to a modified version of the [Gilded Rose Refactoring
+Mancuso and apply it to a modified Java version of the [Gilded Rose Refactoring
 Kata](https://github.com/emilybache/GildedRose-Refactoring-Kata) originally
 created by [Terry Hughes](https://twitter.com/TerryHughes). And we will work in
 pairs to solve the kata.
@@ -21,7 +20,8 @@ Code](https://www.youtube.com/watch?v=_NnElPO5BU0) before the kata coding
 session.
 
 ## Getting started
-Here are the Eclipse tools we will use, you probably already have many of them:
+Feel free to use any IDE that you want for the kata. For Eclipse, here are the
+tools that we will use, you probably already have many of them:
 * [Buildship: Eclipse Plug-ins for Gradle](https://github.com/eclipse/buildship/blob/master/docs/user/Installation.md)
 * [TestNG Eclipse plug-in](https://testng.org/doc/download.html)
 * [EclEmma: Java code coverage for Eclipse](https://www.eclemma.org/)
@@ -30,7 +30,8 @@ Here are the Eclipse tools we will use, you probably already have many of them:
 
 Create a branch of this repository called firstname1-firstname2 where firstname1
 is your first name and firstname2 is your coding partner's first name. Import
-the project as a Gradle project in Eclipse or any other IDE that you like. If you are using Eclipse, you can import the project via:
+the project as a Gradle project in Eclipse or your preferred IDE. In Eclipse,
+you can import the project via:
 1. File > Import...
 2. Select Existing Gradle Project
 3. Select the directory in which this README exists
