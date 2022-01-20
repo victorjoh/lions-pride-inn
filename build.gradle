@@ -1,23 +1,22 @@
-
 plugins {
-    // Apply the application plugin to add support for building a CLI application in Java.
-    id 'application'
+	// Apply the application plugin to add support for building a CLI application in Java.
+	id 'application'
 }
 
 repositories {
-    mavenCentral()
+	mavenCentral()
 }
 
 targetCompatibility = '1.11'
 
 dependencies {
-    testImplementation 'org.testng:testng:7.4.0'
+	testImplementation 'org.testng:testng:7.4.0'
 }
 
 application {
-    mainClass = 'gilded.rose.App'
+	mainClass = 'gilded.rose.App'
 }
 
 tasks.named('test') {
-    useTestNG()
+	useTestNG()
 }
