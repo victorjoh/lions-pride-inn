@@ -20,14 +20,33 @@ Code](https://www.youtube.com/watch?v=_NnElPO5BU0) before the kata coding
 session.
 
 ## Getting started
+### Suggested Tools
 Feel free to use any IDE that you want for the kata. For Eclipse, here are the
 tools that we will use, you probably already have many of them:
 * [Buildship: Eclipse Plug-ins for Gradle](https://github.com/eclipse/buildship/blob/master/docs/user/Installation.md)
 * [TestNG Eclipse plug-in](https://testng.org/doc/download.html)
 * [EclEmma: Java code coverage for Eclipse](https://www.eclemma.org/)
-* Optional: [Infinitest: automatically runs relevant tests on change](https://infinitest.github.io/doc/eclipse#get-started)
-* Optional: [MoreUnit: shortcuts to run tests for class and jump between test and class](https://moreunit.github.io/MoreUnit-Eclipse/)
 
+I could not get
+[Infinitest](https://infinitest.github.io/doc/eclipse#get-started) to work which
+is what Sandro Mancuso used in the video. I suggest using
+[MoreUnit](https://moreunit.github.io/MoreUnit-Eclipse/) instead. Instead of
+running tests on save as Infinitest does, MoreUnit provides shortcuts for
+running the corresponding test file, jumping between the test file and class
+under test and creating a test if it does not exist. For this exercise, MoreUnit
+works fine but with MoreUnit 3.3.1, the jumping does not work. I suggest
+installing MoreUnit 3.3.0 instead by:
+1. Download [org.moreunit.updatesite-3.3.0.zip from their releases on
+   github](https://github.com/MoreUnit/MoreUnit-Eclipse/releases/download/v3.3.0/org.moreunit.updatesite-3.3.0.zip).
+2. In eclipse, go to Help > Install New Software.
+3. Click Add...
+4. Click Archive... and open org.moreunit.updatesite-3.3.0.zip
+5. name it MoreUnit
+6. Click Add
+7. Select *MoreUnit for Java* and *MoreUnit Light*
+8. Click Finish and follow the installation procedure until installed
+
+### Git branch and Eclipse import
 Create a branch of this repository called firstname1-firstname2 where firstname1
 is your first name and firstname2 is your coding partner's first name. Import
 the project as a Gradle project in Eclipse or your preferred IDE. In Eclipse,
@@ -71,12 +90,16 @@ our system:
 * "Conjured" items degrade in Quality twice as fast as normal items. Conjured
   items are identified by having a name that starts with "Conjured".
 
-You are not allowed to change the signatures of any of the methods or
-constructors that already exist since there is a lot of other code that is using
-this piece of code. You are allowed to change everything else like adding
-additional methods and classes, modifying the code within the existing methods
-method or add new third party libraries. But everything has to still work as
-before with the exception of conjured items.
+**You are not allowed to change the signatures of any of the methods or
+constructors that already exist.** We imagine that there is a lot of other code
+that is using this piece of code, and by changing the signatures we would affect
+other untested code which is too risky. **You are also not allowed to change the
+implementation of getTemperature in the Freezer or the Fridge classes.**
+
+You are allowed to change everything else like adding additional methods,
+constructors and classes. You can modify the code within the existing methods or
+add new third party libraries. But everything has to still work as before with
+the exception of conjured items.
 
 ## Strategy
 The basic strategy we will use is:
