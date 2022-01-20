@@ -99,7 +99,8 @@ implementation of getTemperature in the Freezer or the Fridge classes.**
 You are allowed to change everything else like adding additional methods,
 constructors and classes. You can modify the code within the existing methods or
 add new third party libraries. But everything has to still work as before with
-the exception of conjured items.
+the exception of conjured items. Also, feel free to remove the foo test method
+in GildedRoseTest.
 
 ## Strategy
 The basic strategy we will use is:
