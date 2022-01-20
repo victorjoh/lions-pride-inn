@@ -33,9 +33,10 @@ is what Sandro Mancuso used in the video. I suggest using
 [MoreUnit](https://moreunit.github.io/MoreUnit-Eclipse/) instead. Instead of
 running tests on save as Infinitest does, MoreUnit provides shortcuts for
 running the corresponding test file, jumping between the test file and class
-under test and creating a test if it does not exist. For this exercise, MoreUnit
-works fine but with MoreUnit 3.3.1, the jumping does not work. I suggest
-installing MoreUnit 3.3.0 instead by:
+under test, and creating a test if it does not exist. For this exercise,
+MoreUnit 3.3.1 works fine, but in our Ufo projects the jumping does not work. I
+suggest installing MoreUnit 3.3.0 instead. It works for both this exercise and
+the Ufo projects. To install MoreUnit 3.3.0, do the following:
 1. Download [org.moreunit.updatesite-3.3.0.zip from their releases on
    github](https://github.com/MoreUnit/MoreUnit-Eclipse/releases/download/v3.3.0/org.moreunit.updatesite-3.3.0.zip).
 2. In eclipse, go to Help > Install New Software.
