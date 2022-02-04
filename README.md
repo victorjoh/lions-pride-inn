@@ -1,4 +1,4 @@
-# Gilded Rose Refactoring Kata
+# Lion's Pride Inn Refactoring Kata
 Welcome to the dojo! This is a kata (exercise) about working with legacy code.
 In this kata we have been given a piece of code that is hard to test since it
 was not written with testing in mind. The code is risky to refactor because it
@@ -57,10 +57,10 @@ you can import the project via:
 3. Select the directory in which this README exists
 4. Press Finish
 
-## Gilded Rose requirements
-Hi and welcome to team Gilded Rose. As you know, we are a small inn with a prime
-location in a prominent city ran by a friendly innkeeper named Allison. We also
-buy and sell only the finest goods. Unfortunately, our goods are constantly
+## Lion's Pride Inn requirements
+Hi and welcome to team Lion's Pride Inn. As you know, we are a small inn with a
+prime location in a prominent city ran by a friendly innkeeper named Allison. We
+also buy and sell only the finest goods. Unfortunately, our goods are constantly
 degrading in quality as they approach their sell by date. We have a system in
 place that updates our inventory for us. It was developed by a no-nonsense type
 named Leeroy, who has moved on to new adventures. Your task is to add the new
@@ -76,14 +76,13 @@ Pretty simple, right? Well this is where it gets interesting:
 
 * Once the sell by date has passed, Quality degrades twice as fast
 * The Quality of an item is never negative
-* "Aged Brie" actually increases in Quality the older it gets
+* "Fine Aged Cheddar" actually increases in Quality the older it gets, as long
+  as the fridge is working.
 * The Quality of an item is never more than 50 except for "Sulfuras" which
   always has quality 80 since it is a ledgendary item.
 * "Sulfuras", being a legendary item, never has to be sold or decreases in
   Quality
-* "Backstage passes", like aged brie, increases in Quality as its SellIn value
-  approaches; Quality increases by 2 when there are 10 days or less and by 3
-  when there are 5 days or less but Quality drops to 0 after the concert
+* We also have ice cream in the freezer.
 
 We have recently signed a supplier of conjured items. This requires an update to
 our system:
@@ -101,7 +100,7 @@ You are allowed to change everything else like adding additional methods,
 constructors and classes. You can modify the code within the existing methods or
 add new third party libraries. But everything has to still work as before with
 the exception of conjured items. Also, feel free to remove the foo test method
-in GildedRoseTest.
+in LionsPrideInnTest.
 
 ## Strategy
 The basic strategy we will use is:

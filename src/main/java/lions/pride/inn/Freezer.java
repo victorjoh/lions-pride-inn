@@ -1,4 +1,4 @@
-package gilded.rose;
+package lions.pride.inn;
 
 public class Freezer {
 
