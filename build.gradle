@@ -14,7 +14,7 @@ dependencies {
 }
 
 application {
-	mainClass = 'gilded.rose.App'
+	mainClass = 'lions.pride.inn.App'
 }
 
 tasks.named('test') {
