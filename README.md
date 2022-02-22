@@ -1,4 +1,4 @@
-# Lion's Pride Inn Refactoring Kata
+# Lion's Pride Inn refactoring kata
 Welcome to the dojo! This is a kata (exercise) about working with legacy code.
 In this kata we have been given a piece of code that is hard to test since it
 was not written with testing in mind. The code is risky to refactor because it
@@ -17,12 +17,18 @@ pairs to solve the kata.
 ## Preparation
 Watch [Testing and Refactoring Legacy
 Code](https://www.youtube.com/watch?v=_NnElPO5BU0) before the kata coding
-session.
+session. Set up your Eclipse (or your preferred IDE) with the [Suggested
+tools](#Suggested-tools) (or similar) as written below. Clone this repo and
+import it in Eclipse, see [Eclipse import](#Eclipse-import) below for how to
+clone and import a gradle repo in Eclipse.
 
 ## Getting started
-### Suggested Tools
+This section contains steps that needs to be done before starting the kata.
+
+### Suggested tools
 Feel free to use any IDE that you want for the kata. For Eclipse, here are the
 tools that we will use, you probably already have many of them:
+
 * [Buildship: Eclipse Plug-ins for Gradle](https://github.com/eclipse/buildship/blob/master/docs/user/Installation.md)
 * [TestNG Eclipse plug-in](https://testng.org/doc/download.html)
 * [EclEmma: Java code coverage for Eclipse](https://www.eclemma.org/)
@@ -37,6 +43,7 @@ under test, and creating a test if it does not exist. For this exercise,
 MoreUnit 3.3.1 works fine, but in our Ufo projects the jumping does not work. I
 suggest installing MoreUnit 3.3.0 instead. It works for both this exercise and
 the Ufo projects. To install MoreUnit 3.3.0, do the following:
+
 1. Download [org.moreunit.updatesite-3.3.0.zip from their releases on
    github](https://github.com/MoreUnit/MoreUnit-Eclipse/releases/download/v3.3.0/org.moreunit.updatesite-3.3.0.zip).
 2. In eclipse, go to Help > Install New Software.
@@ -47,15 +54,24 @@ the Ufo projects. To install MoreUnit 3.3.0, do the following:
 7. Select *MoreUnit for Java* and *MoreUnit Light*
 8. Click Finish and follow the installation procedure until installed
 
-### Git branch and Eclipse import
-Create a branch of this repository called firstname1-firstname2 where firstname1
-is your first name and firstname2 is your coding partner's first name. Import
-the project as a Gradle project in Eclipse or your preferred IDE. In Eclipse,
-you can import the project via:
+### Eclipse import
+Clone this repo with the command:
+```
+git clone git@bitbucket.org:unifaun/lions-pride-inn.git
+```
+Import the project as a Gradle project in Eclipse or your preferred IDE. In
+Eclipse, you can import the project via:
+
 1. File > Import...
 2. Select Existing Gradle Project
 3. Select the directory in which this README exists
 4. Press Finish
+
+### Create branch
+Before we start the kata you will be assigned a pair programming partner. Create
+a branch of this repository called firstname1-firstname2 where firstname1 is
+your first name and firstname2 is your coding partner's first name. This is
+where you'll put your solution to the kata.
 
 ## Lion's Pride Inn requirements
 Hi and welcome to team Lion's Pride Inn. As you know, we are a small inn with a
@@ -94,7 +110,7 @@ our system:
 constructors that already exist.** We imagine that there is a lot of other code
 that is using this piece of code, and by changing the signatures we would affect
 other untested code which is too risky. **You are also not allowed to change the
-implementation of getTemperature in the Freezer or the Fridge classes.**
+behavior of getTemperature in the Freezer or the Fridge classes.**
 
 You are allowed to change everything else like adding additional methods,
 constructors and classes. You can modify the code within the existing methods or
@@ -104,6 +120,7 @@ in LionsPrideInnTest.
 
 ## Strategy
 The basic strategy we will use is:
+
 1. Cover legacy code with tests
 2. Refactor
 3. Implement new feature
@@ -116,18 +133,21 @@ The main idea is:
 Switch the person driving in your pair often.
 
 Guidelines when writing tests for legacy code:
+
 1. When adding tests to legacy code, start by adding tests to the shortest
    branch before moving on the to deeper branches.
 2. Use code coverage tools to answer the following question: is my test covering
    the branch that I thought it would cover?
 
 Guidelines when refactoring legacy code:
+
 1. Start refactoring from deepest to shortest branch.
 2. Small steps when refactoring, stay in the green as much as possible.
 3. Getting rid of variables is a good way to make it easier to rejuggle the
    code.
 
 Suggested way to add a new features is to use TDD:
+
 1. Add a failing test.
 2. Make it pass.
 3. Refactor.
@@ -136,6 +156,7 @@ Suggested way to add a new features is to use TDD:
 Sandro Mancuso had a final slide with general advice:
 
 Craftsmen at work
+
 * Write readable and maintainable code
     * Code must express business rules
 * Strive for simplicity
