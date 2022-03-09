@@ -118,10 +118,10 @@ our system:
 * "Conjured" items degrade in Quality twice as fast as normal items. Conjured
   items are identified by having a name that starts with "Conjured".
 
-**You are not allowed to change the signatures of any of the methods or
-constructors that already exist.** We imagine that there is a lot of other code
-that is using this piece of code, and by changing the signatures we would affect
-other untested code which is too risky.
+**You are not allowed to change the signatures of any of the public methods,
+public constructors or public fields that already exist.** We imagine that there
+is a lot of other code that is using this piece of code, and by changing the
+signatures we would affect other untested code which is too risky.
 
 You are allowed to change everything else like adding additional methods,
 constructors and classes. You can modify the code within the existing methods or
