@@ -69,7 +69,7 @@ use TestNG in Eclipse by:
 ### Eclipse import
 Clone this repo with the command:
 ```
-git clone git@bitbucket.org:unifaun/lions-pride-inn.git
+git clone git@github.com:victorjoh/lions-pride-inn.git
 ```
 Import the project as a Gradle project in Eclipse or your preferred IDE. In
 Eclipse, you can import the project via:
