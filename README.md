@@ -37,12 +37,16 @@ I could not get
 [Infinitest](https://infinitest.github.io/doc/eclipse#get-started) to work which
 is what Sandro Mancuso used in the video. I suggest using
 [MoreUnit](https://moreunit.github.io/MoreUnit-Eclipse/) instead. Instead of
-running tests on save as Infinitest does, MoreUnit provides shortcuts for
-running the corresponding test file, jumping between the test file and class
-under test, and creating a test if it does not exist. For this exercise,
-MoreUnit 3.3.1 works fine, but in our Ufo projects the jumping does not work. I
-suggest installing MoreUnit 3.3.0 instead. It works for both this exercise and
-the Ufo projects. To install MoreUnit 3.3.0, do the following:
+running tests on save as Infinitest does, MoreUnit provides the following shortcuts:
+
+1. **Ctrl + r** Run the corresponding test file
+2. **Ctrl + j** Jump between the test file and class under test, will create
+   file if it does not exist.
+
+For this exercise, MoreUnit 3.3.1 works fine, but in our Ufo projects the
+jumping does not work. I suggest installing MoreUnit 3.3.0 instead. It works for
+both this exercise and the Ufo projects. To install MoreUnit 3.3.0, do the
+following:
 
 1. Download [org.moreunit.updatesite-3.3.0.zip from their releases on
    github](https://github.com/MoreUnit/MoreUnit-Eclipse/releases/download/v3.3.0/org.moreunit.updatesite-3.3.0.zip).
@@ -53,6 +57,14 @@ the Ufo projects. To install MoreUnit 3.3.0, do the following:
 6. Click Add
 7. Select *MoreUnit for Java* and *MoreUnit Light*
 8. Click Finish and follow the installation procedure until installed
+
+We use TestNG both in this exercise and our Ufo projects. Configure MoreUnit to
+use TestNG in Eclipse by:
+
+1. Open Window > Preferences
+2. Go to MoreUnit > Java
+3. Set Test Type to TestNG
+4. Click Apply and Close
 
 ### Eclipse import
 Clone this repo with the command:
@@ -109,8 +121,7 @@ our system:
 **You are not allowed to change the signatures of any of the methods or
 constructors that already exist.** We imagine that there is a lot of other code
 that is using this piece of code, and by changing the signatures we would affect
-other untested code which is too risky. **You are also not allowed to change the
-behavior of getTemperature in the Freezer or the Fridge classes.**
+other untested code which is too risky.
 
 You are allowed to change everything else like adding additional methods,
 constructors and classes. You can modify the code within the existing methods or
