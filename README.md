@@ -45,7 +45,7 @@ running tests on save as Infinitest does, MoreUnit provides the following shortc
 
 For this exercise, MoreUnit 3.3.1 works fine, but in some other projects the
 jumping does not work. I suggest installing MoreUnit 3.3.0 instead. It works for
-both this exercise and other. To install MoreUnit 3.3.0, do the following:
+both this exercise and other projects. To install MoreUnit 3.3.0, do the following:
 
 1. Download [org.moreunit.updatesite-3.3.0.zip from their releases on
    github](https://github.com/MoreUnit/MoreUnit-Eclipse/releases/download/v3.3.0/org.moreunit.updatesite-3.3.0.zip).
